@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>newfront</title>
+	<link href="front.css" rel = "stylesheet" type="text/css" />
+	<link href="drpdwn.css" rel = "stylesheet" type="text/css" />
+</head>
+<body>
+	<div id = "parent" >
+	
+		<div id = "div1" >
+			<img alt="RUET" src="./images/ruetlogo4.png" style="border: 1px solid gray; border-radius: 8px;" />
+		</div>
+		<div id="div2"><h3><a href ="http://www.ruet.ac.bd/" target="blank" style="text-decoration:none">Rajshahi University of Engineering And Technology</a></h3>
+
+		<h1>Department of electrical and computer engineering</h1>
+		</div>
+		
+		<div id = "dvSignin">
+		
+			<a href="./signin.html"style="text-decoration:none">Sign-in</a>
+		</div>
+	</div>
+	
+		
+	<ul>
+  <li><a href="newfront.html" style="text-decoration:none"> HOME </a></li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About ECE</a>
+    <div class="dropdown-content">
+     <a href ="overview.html" style="text-decoration:none">Over View</a>
+		<a href ="teacher.html">Teachers and Stuff</a>
+		<a href ="#">Students</a>
+		<a href="#">Achievements</a>
+    </div>
+  </li>
+  <li><a href ="./download/course.pdf" target="blank" style="text-decoration:none">Course syllebus</a></li>
+  <li><a href="contact.html"> CONTACTS </a></li>
+  <li><a href="gallery.html"> Photo Gallery </a></li>
+  <li><a href="./signup.html" style="text-decoration:none" >Sign-up</a></li>
+ </ul>
+ 
+ 
+ 
+	<div id = "bottom_div" >
+	<div id = "bottom_div1" >
+	<fieldset style="width:95%;"><legend>Message From Head</legend>
+	<div id = "msg" style="width:100%;padding: 10px 10px 10px 10px;" >
+		
+			<img src="./images/rajjaksir.jpg" alt="Headshot photo" style="float: left;padding: 0 15px 15px 0;" />
+			<div id="description">
+			<p>
+   Rajshahi University of Engineering & Technology, one of the top engineering university in the country,has opened
+   the department of Electrical and Computer Engineering (ECE) in 2016.The department has the mission of accumulation,
+   generation and propagation of knowledge in the field of Electrical and Computer Engineering.The central aim to the 
+   mission is a top quality educational program and research that benefits our students, researcher,the division of
+   Rajshahi, the national and the world.The department also focuses and acts for enlargement, growth and entrepreneurship.
+   It is expected that the department will assist future growth in areas of fundamental economic importance to the country.
+		</p>
+		</div>
+	</fieldset> 
+	</div>
+	
+	
+	
+	
+	<div id = "bottom_div2" >
+	<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="./images/grp1.jpg"
+  style="width:100%; height:450px">
+  <img class="mySlides" src="./images/gate.jpg"
+  style="width:100%; height:450px">
+  <img class="mySlides" src="./images/cori.jpg"
+  style="width:100%; height:450px">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+	<div id = "bottom_div3"  style="background-image:url('./images/b3.jpg')" >
+	<div id="link" style="padding:40px">
+	<h4>Important Links</h4>
+	<dl>
+	<li><a href ="./download/classroutine.pdf" target="blank" style="text-decoration:none">Class-Routine</a></li>
+	<br>
+	<li><a href ="./download/coursereg.pdf" target="blank" style="text-decoration:none">Course Registration Form</a></li>
+	<br>
+	<li><a href="./download/examreg.pdf" target="blank" style="text-decoration:none" >Exam Form</a></li>
+	<br>
+	</dl>
+	</div>
+	</div>
+	
+	</div>
+</body>
+</html>

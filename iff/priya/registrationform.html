@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+   <title>course registration form</title>
+   </head>
+    <body>
+        <p align="center"><image
+        src="ruet.png"width="100"height="100"</p>
+        <h2 align="center"><ins>Heavens Light is Our Guide></ins></h2>
+        <h3 align="center"><ins>RAJSHAHI UNIVERSITY OF ENGINEERING AND TECHNOLOGY></ins></h3>
+        <h4 align="center"><ins>course registration/course adjustment
+            Form</ins></h4>
+            <div id="change"><h5 id="a1">
+                Roll No.:<input type="number" id="input_roll">
+                Registration No.:<input type="number"id="input_reg">
+                Session:
+                <select id="session">
+                <option></option>
+                <option>2015-2016</option>
+                <option>2016-2017</option>
+                <option>2017-2018</option>
+                <option>2018-2019</option>
+                <option>2019-2020</option>
+                <option>2020-2021</option>
+                <option>2021-2022</option>
+                </select></h5>
+                <h5 id ="name">Name:<input type="text"id="input_name"></h5>
+                <h5 id="a2">Academic Session :
+                    <select id="ad_ses">  
+                 <option></option>
+                <option>2016-2017</option>
+                <option>2017-2018</option>
+                <option>2018-2019</option>
+                <option>2019-2020</option>
+                <option>2020-2021</option>
+                <option>2021-2022</option>
+                </select>Semister:
+                <select id="semister">
+                <option></option>
+                
+                <option>1st year odd semister</option>
+                <option>1st year even semister</option>
+                <option>2st year odd semister</option>
+                <option>2st year even semister</option>
+                <option>3st year odd semister</option>
+                <option>3st year even semister</option>
+                <option>4st year odd semister</option>
+                <option>4st year even semister</option>
+                </select>Previous earned credit:
+                <input id="input_credit"
+                </h5>
+                <table width="200"border="1"
+                cellspaching="1"cellpading="0">
+                <tr>
+                    <th scope ="row">course No.of Backlog courses</th>
+                    <td><input</td>
+                    <td><input</td>
+                    <td><input</td>
+                    <td><input</td>
+                    <td><input</td>
+                    </tr>
+                    </table>
+                    <h5>Courses to be registered in this semister:</h5><br>
+                    <table width="200"border="1"
+                    cellspacing="1"cellpadding="1">
+                    </tr>
+                    <th scope="col">Course No.</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text"id="cn1"></td>
+                        <td><input type="text"id="ct1"></td>
+                        <td><input type="number"id="cr1"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"id="cn2"></td>
+                        <td><input type="text"id="ct2"></td>
+                        <td><input type="number"id="cr2"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn3"></td>
+                        <td><input type="text"id="ct3"></td>
+                        <td><input type="number"id="cr3"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn4"></td>
+                        <td><input type="text"id="ct4"></td>
+                        <td><input type="number"id="cr4"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn5"></td>
+                        <td><input type="text"id="ct5"></td>
+                        <td><input type="number"id="cr5"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn6"></td>
+                        <td><input type="text"id="ct6"></td>
+                        <td><input type="number"id="cr6"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn7"></td>
+                        <td><input type="text"id="ct7"></td>
+                        <td><input type="number"id="cr7"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn8"></td>
+                        <td><input type="text"id="ct8"></td>
+                        <td><input type="number"id="cr8"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn9"></td>
+                        <td><input type="text"id="ct9"></td>
+                        <td><input type="number"id="cr9"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn10"></td>
+                        <td><input type="text"id="ct10"></td>
+                        <td><input type="number"id="cr10"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn11"></td>
+                        <td><input type="text"id="ct11"></td>
+                        <td><input type="number"id="cr11"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"id="cn12"></td>
+                        <td><input type="text"id="ct12"></td>
+                        <td><input type="number"id="cr12"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>Total credit of this semister
+                            </td>
+                            <tr id="total"><input></td>
+                            </tr>
+                            <table>
+                                <br>
+                                <h5>Adviser's Comment(if any):<br><textarea></h5>
+                            
+                                <input>&emsp;&emsp;<input>&emsp;&emsp;<input>
+                                <h5><ins>Signature of the Student</ins>&emsp;&emsp;&emsp;&emsp;&emsp;<ins><Signature of the Controller</ins></h5>
+                                <h5>Date</h5>
+                                <input type="button"id="submit"
+                                value="submit"onclick="changed()">
+                                <script>
+                                    function change(){
+                                        var name,roll,reg,session;
+                                        name=document.getElementById('input_name').value;
+                                        roll=document.getElementById('input_roll').value;
+                                        reg=document.getElementById('input_reg').value;
+                                        ses=document.getElementById('session').value;
+                                        name='Name:'+name;
+                                        roll='Roll No.'+roll;
+                                        reg='&emsp;&emsp;Registration No.:'+reg;
+                                        ses='emsp;&emsp;Session:'+ses;
+                                        ses=roll+reg+ses'\t';
+                                        document.getElementById('a1').innerHTML=ses;
+                                        document.getElementById('name').innerHTML=name;
+                                        var ads,sem,credit;
+                                        ads=document.getElementById('a2').innerHTML=ads;
+                                        var
+                                        t=document.getElementById('cr1').value,t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11;
+                                        t1=document.getElementById('cr2').value;
+                                        t2=document.getElementById('cr3').value;
+                                        t3=document.getElementById('cr4').value;
+                                        t4=document.getElementById('cr5').value;
+                                        t5=document.getElementById('cr6').value;
+                                        t6=document.getElementById('cr7').value;
+                                        t7=document.getElementById('cr8').value;
+                                        t8=document.getElementById('cr9').value;
+                                        t9=document.getElementById('cr10').value;
+                                        t10=document.getElementById('cr11').value;
+                                        t11=document.getElementById('cr12').value;
+                                        total=+t+t1+t2+t3+t4+t5+t6+t7+t8+t9+t10+t11;
+                                        document.getElementById('total').innerHTML=total;
+                                      }
+                                      </script>
+                                      </div>
+                        
+                
+    </body>
+    </html>
